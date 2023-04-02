@@ -1,0 +1,11 @@
+.Logo{
+    color: rgb(190, 62, 22);font-weight: 600;
+
+}
+@media screen and  (max-width:991px){
+    .Logo{
+        color: rgb(190, 62, 22);
+        font-weight: 600;
+    padding-left: 170px;
+    }
+}
