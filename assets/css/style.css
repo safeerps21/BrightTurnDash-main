@@ -2280,8 +2280,8 @@ progress {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: 10px;
+    padding-left: 10px;
     margin-top: var(--bs-gutter-y); }
 
 .col {
@@ -8344,8 +8344,8 @@ textarea.form-control-lg {
 .pt-4 {
   padding-top: 1.5rem !important; }
 
-.pt-5 {
-  padding-top: 3rem !important; }
+/* .pt-5 {
+  padding-top: 3rem !important; } */
 
 .pe-0 {
   padding-right: 0 !important; }
@@ -14441,7 +14441,7 @@ dl {
 
 .content-wrapper {
   background: #f2edf3;
-  padding: 2.75rem 2.25rem;
+  padding: 1.75rem 17px;
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;

@@ -19,7 +19,8 @@
   <!-- End layout styles -->
   <link rel="shortcut icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" href="./assets/css/custom.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -287,10 +288,11 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="page-header">
-            <h3 class="page-title" >
-              <span class="page-title-icon bg-gradient-primary text-white me-2" >
-                <i class="mdi mdi-home"></i>
-              </span> <a href="index.html" style="text-decoration: none;color: rgb(0, 0, 0);" id="breadcrumb">Home</a> 
+            <h3 class="page-title" style="display:flex;">
+              <span class="page-title-icon bg-gradient-primary text-white me-2">
+                <a href="index.html" style="color: white;"><i class="mdi mdi-home"></i></a>
+              </span> <a href="index.html" style="text-decoration: none;color: rgb(0, 0, 0);font-weight:600;"  id="breadcrumb">Home</a><a style="display: none; text-decoration: none;color: rgb(0, 0, 0);font-weight:600;"  id="breadcrumbC">Courses</a><a style="display: none; text-decoration: none;color: rgb(0, 0, 0);font-weight:600;"  id="breadcrumbU">Universities</a>
+              
             </h3>
             <nav aria-label="breadcrumb">
               <ul class="breadcrumb">
@@ -302,36 +304,40 @@
           </div>
           <div class="row">
             <div class="col-md-6 stretch-card grid-margin" id="courseHead">
-              <a  href="#" onclick="courses()">
+              <a href="#" onclick="courses()">
                 <div class="card bg-gradient-danger card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3"><a href="#" style="text-decoration: none;color: white;"
-                      onclick="courses()">5000+</a>
+                        onclick="courses()">5000+</a>
                     </h4>
-                    <h2 class="mb-5"><a href="#"style="text-decoration: none;color: white;" onclick="courses()">Courses</a></h2>
-                    <h6 class="card-text"><a href="#" style="text-decoration: none;color: white;" onclick="courses()">Explore</a> <i class="mdi mdi-home"></i></h6>
+                    <h2 class="mb-5"><a href="#" style="text-decoration: none;color: white;"
+                        onclick="courses()">Courses</a></h2>
+                    <h6 class="card-text"><a href="#" style="text-decoration: none;color: white;"
+                        onclick="courses()">Explore</a> <i class="mdi mdi-home"></i></h6>
                   </div>
 
                 </div>
               </a>
             </div>
             <div class="col-md-6 stretch-card grid-margin" id="universityHead">
-              <a  href="#" onclick="university()"> 
-                 <div class="card bg-gradient-info card-img-holder text-white">
-                <div class="card-body">
-                  <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                  <h4 class="font-weight-normal mb-3"><a href="#" style="text-decoration: none;color: white;"
-                    onclick="university()">1000+</a>
-                  </h4>
-                  <h2 class="mb-5"><a href="#"style="text-decoration: none;color: white;" onclick="university()">Universities</a></h2>
-                  <h6 class="card-text">
-                    <h6 class="card-text"><a href="#" style="text-decoration: none;color: white;" onclick="university()">Explore</a><i class="mdi mdi-home"></i></h6>
-                  </h6>
+              <a href="#" onclick="university()">
+                <div class="card bg-gradient-info card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3"><a href="#" style="text-decoration: none;color: white;"
+                        onclick="university()">1000+</a>
+                    </h4>
+                    <h2 class="mb-5"><a href="#" style="text-decoration: none;color: white;"
+                        onclick="university()">Universities</a></h2>
+                    <h6 class="card-text">
+                      <h6 class="card-text"><a href="#" style="text-decoration: none;color: white;"
+                          onclick="university()">Explore</a><i class="mdi mdi-home"></i></h6>
+                    </h6>
+                  </div>
                 </div>
-              </div>
-            </a>
-            
+              </a>
+
             </div>
             <!-- <div class="col-md-4 stretch-card grid-margin">
                 <div class="card bg-gradient-success card-img-holder text-white">
@@ -372,350 +378,335 @@
               <div class="row">
                 <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="courses">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >A Level Further Mathematics</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                          <div >
-                           <h1 style="background-color:blanchedalmond;border-radius:20px;text-align: center;padding: 10px 0px;">
-                              <p>Total fee</p>
-                          <p>$ 49500</h5>
-                           </h1>
-                          
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>A Level Further Mathematics</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
                 <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="courses1">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >A Level Further Mathematics</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                          <div >
-                           <h1 style="background-color:blanchedalmond;border-radius:20px;text-align: center;padding: 10px 0px;">
-                              <p>Total fee</p>
-                          <p>$ 49500</h5>
-                           </h1>
-                          
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>A Level Further Mathematics</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
                 <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="courses2">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >A Level Further Mathematics</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                          <div >
-                           <h1 style="background-color:blanchedalmond;border-radius:20px;text-align: center;padding: 10px 0px;">
-                              <p>Total fee</p>
-                          <p>$ 49500</h5>
-                           </h1>
-                          
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>A Level Further Mathematics</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
                 <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="courses3">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >A Level Further Mathematics</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                          <div >
-                           <h1 style="background-color:blanchedalmond;border-radius:20px;text-align: center;padding: 10px 0px;">
-                              <p>Total fee</p>
-                          <p>$ 49500</h5>
-                           </h1>
-                          
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>A Level Further Mathematics</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
                 <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="courses4">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >A Level Further Mathematics</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                          <div >
-                           <h1 style="background-color:blanchedalmond;border-radius:20px;text-align: center;padding: 10px 0px;">
-                              <p>Total fee</p>
-                          <p>$ 49500</h5>
-                           </h1>
-                          
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>A Level Further Mathematics</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
 
                 <!--Universities-->
-                <div class="col-6" style="margin-bottom: 20px;display: none" id="university">
+                <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="university">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >university</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4">
-                          <div style="border: 1px solid grey;border-radius: 20px;text-align: center;">
-                            <p>Total fee</p>
-                          <h5>$ 49500</h5>
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>Cambridge University</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12" style="display: flex;justify-content: end;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
-                <div class="col-6" style="margin-bottom: 20px;display: none" id="university1">
+                <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="university1">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >university</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4">
-                          <div style="border: 1px solid grey;border-radius: 20px;text-align: center;">
-                            <p>Total fee</p>
-                          <h5>$ 49500</h5>
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>Cambridge University</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12" style="display: flex;justify-content: end;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
-                <div class="col-6" style="margin-bottom: 20px;display: none" id="university2">
+                <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="university2">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >university</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4">
-                          <div style="border: 1px solid grey;border-radius: 20px;text-align: center;">
-                            <p>Total fee</p>
-                          <h5>$ 49500</h5>
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>Cambridge University</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12" style="display: flex;justify-content: end;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
-                <div class="col-6" style="margin-bottom: 20px;display: none" id="university3">
+                <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="university3">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >university</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4">
-                          <div style="border: 1px solid grey;border-radius: 20px;text-align: center;">
-                            <p>Total fee</p>
-                          <h5>$ 49500</h5>
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>Cambridge University</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12" style="display: flex;justify-content: end;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
-                <div class="col-6" style="margin-bottom: 20px;display: none" id="university4">
+                <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px;display: none" id="university4">
                   <div style="background-color: white;padding: 40px 40px;border-radius: 10px;">
-                      <div class="row">
-                    <div class="col-lg-12" style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
-                      <img src="assets/images/faces/face12.jpg" width="40" style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
-                      <h4 >university</h3>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
-                          <p><i class="mdi mdi-bookmark-check"></i>London</p>
-                          <p><i class="mdi mdi-clock"></i> Full Time</p>
-                          <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
-                        </div>
-                        <div class="col-lg-4">
-                          <div style="border: 1px solid grey;border-radius: 20px;text-align: center;">
-                            <p>Total fee</p>
-                          <h5>$ 49500</h5>
+                    <div class="row">
+                      <div class="col-lg-12"
+                        style="margin-bottom: 20px;border-bottom:1px solid rgb(149, 149, 149);display: inline-flex;">
+                        <img src="assets/images/faces/face12.jpg" width="40"
+                          style="border-radius: 50%;margin-right:10px ;margin-bottom: 5px;" alt="">
+                        <h4>Cambridge University</h3>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-8 col-sm-12">
+                            <h4><i class="mdi mdi-home" style="margin-right: 5px;"></i>Bellerbys College</p>
+                              <p><i class="mdi mdi-bookmark-check"></i>London</p>
+                              <p><i class="mdi mdi-clock"></i> Full Time</p>
+                              <p><i class="mdi mdi-calendar"></i> UG / 6 Terms</p>
                           </div>
-                          
+                          <div class="col-lg-4 col-sm-4" style="border: 4px solid #dadada;border-radius: 10px; display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                              <p style="font-size: larg;">Total Fee</p>
+                              <p style="font-size: larger;font-weight: 600;">$ 49 500</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-12" style="display: flex;justify-content: end;">
-                      <button style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
-                        view
-                      </button>
+                      <div class="col-lg-12 col-sm-12" style="display: flex;justify-content: end;margin-top:5px;">
+                        <button
+                          style="border-radius: 5px;padding: 6px 35px;background-color: rgb(13, 119, 180);border: none;color: white;">
+                          view
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                
+
                 </div>
               </div>
           </section>
@@ -938,26 +929,32 @@
 
   <!--script-->
   <script>
-    function courses(){
-document.getElementById('courses').style.display= 'block';
-document.getElementById('courses1').style.display= 'block';
-document.getElementById('courses2').style.display= 'block';
-document.getElementById('courses3').style.display= 'block';
-document.getElementById('courses4').style.display= 'block';
-document.getElementById('courseHead').style.display= 'none';
-document.getElementById('universityHead').style.display= 'none';
-document.getElementById('breadcrumb').innerHTML ="Home / Courses"
-      
+    function courses() {
+      document.getElementById('courses').style.display = 'block';
+      document.getElementById('courses1').style.display = 'block';
+      document.getElementById('courses2').style.display = 'block';
+      document.getElementById('courses3').style.display = 'block';
+      document.getElementById('courses4').style.display = 'block';
+      document.getElementById('courseHead').style.display = 'none';
+      document.getElementById('universityHead').style.display = 'none';
+      document.getElementById('breadcrumbC').style.display = 'block'
+      document.getElementById('breadcrumb').style.display = 'none'
+
+
     };
-    function university(){
-      document.getElementById('university').style.display= 'block';
-document.getElementById('university1').style.display= 'block';
-document.getElementById('university2').style.display= 'block';
-document.getElementById('university3').style.display= 'block';
-document.getElementById('university4').style.display= 'block';
-document.getElementById('courseHead').style.display= 'none';
-document.getElementById('universityHead').style.display= 'none';
-document.getElementById('breadcrumb').innerHTML ="Home / Universities"
+    function university() {
+      document.getElementById('university').style.display = 'block';
+      document.getElementById('university1').style.display = 'block';
+      document.getElementById('university2').style.display = 'block';
+      document.getElementById('university3').style.display = 'block';
+      document.getElementById('university4').style.display = 'block';
+      document.getElementById('courseHead').style.display = 'none';
+      document.getElementById('universityHead').style.display = 'none';
+      document.getElementById('breadcrumbU').style.display = 'block'
+      document.getElementById('breadcrumb').style.display = 'none'
+
+
+
     };
   </script>
 </body>
